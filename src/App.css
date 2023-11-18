@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div.App {
+   font-family: "Montserrat", sans-serif;
+   letter-spacing: 0.5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+   text-transform: uppercase;
+   font-size: 50px;
+   font-weight: 400;
+   color: #fff;
+   margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* SIDE NAVIGATION */
+.side-navigation {
+   background-color: #041230;
+   width: 300px;
+   height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+/* HERO SECTION */
+.hero-section {
+   background-image: url("/src/assets/coding-background.jpg");
+   height: 100vh;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   backdrop-filter: brightness(60%) blur(2px);
+}
+
+.hero-section span.second-header-text {
+   font-weight: 500;
+   color: #e3872d;
+}
+
+.hero-section span.second-paragraph-text {
+   font-weight: 600;
+}
+
+.hero-section p {
+   color: #fff;
+   margin: 0;
+   font-size: 24px;
 }
