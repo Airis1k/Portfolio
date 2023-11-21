@@ -1,8 +1,19 @@
+import { useEffect, useState } from "react";
 import ProfilePic from "../assets/cut.jpg";
 
 export default function AboutMeSection() {
+   const [profession, setProfession] = useState("Web Developer");
+
+   useEffect(() => {
+      const interval = setInterval(() => {
+         profession === "Web Developer" ? setProfession("Freelancer") : setProfession("Web Developer");
+      }, 3000);
+
+      return () => clearInterval(interval);
+   }, [profession]);
+
    return (
-      <section className="about-me-section">
+      <section id="about" className="about-me-section">
          <div className="intro-text">
             <h2>About Me</h2>
             <p>Main information about me</p>
@@ -13,7 +24,7 @@ export default function AboutMeSection() {
                <div className="profile-border-custom"></div>
             </div>
             <div className="text-wrapper">
-               <h3>I'm Airingas and <span className="second-header-text">Freelancer</span></h3>
+               <h3>I'm Airingas - <span className="second-header-text">{profession}</span></h3>
                <p className="paragraph-text">
                   Hi! My name is <span className="second-paragraph-text">Airingas Staraitis</span>. I am a Web Developer, and I'm very passionate and dedicated to my work. With 10 years experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration to concept and execution, but I find the most satisfaction in seeing the finished product do everything for you that it was created to do.
                </p>

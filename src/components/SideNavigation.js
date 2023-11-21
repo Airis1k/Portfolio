@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import FacebookIcon from "../assets/facebook.svg";
 import LinkedinIcon from "../assets/linkedin.svg";
 import InstagramIcon from "../assets/instagram.svg";
@@ -15,10 +16,10 @@ export default function SideNavigation() {
             <nav className="links">
                <ul>
                   <li>
-                     <Link>Home</Link>
+                     <HashLink to="#home">Home</HashLink>
                   </li>
                   <li>
-                     <Link>About</Link>
+                     <HashLink to="#about">About</HashLink>
                   </li>
                   <li>
                      <Link>Services</Link>

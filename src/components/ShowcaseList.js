@@ -11,6 +11,7 @@ export default function ShowcaseList() {
          <ShowcaseItem skill="Bootstrap" />
          <ShowcaseItem skill="GIT" />
          <ShowcaseItem skill="C++" />
+         <ShowcaseItem skill="Excel" />
       </div>
    );
 }

@@ -15,7 +15,7 @@ function App() {
          <HeroSection />
          <AboutMeSection />
          <AbilitiesSection />
-         {/* <ServicesSection /> */}
+         <ServicesSection />
          {/* <MyWorksSection /> */}
          {/* <ContactMeSection /> */}
          {/* <Footer /> */}
