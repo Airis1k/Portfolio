@@ -2,6 +2,7 @@ import "./App.css";
 import SideNavigation from "./components/SideNavigation";
 import HeroSection from "./components/HeroSection";
 import AboutMeSection from "./components/AboutMeSection";
+import AbilitiesSection from "./components/AbilitiesSection";
 import ServicesSection from "./components/ServicesSection";
 import MyWorksSection from "./components/MyWorksSection";
 import ContactMeSection from "./components/ContactMeSection";
@@ -13,6 +14,7 @@ function App() {
          <SideNavigation />
          <HeroSection />
          <AboutMeSection />
+         <AbilitiesSection />
          {/* <ServicesSection /> */}
          {/* <MyWorksSection /> */}
          {/* <ContactMeSection /> */}
