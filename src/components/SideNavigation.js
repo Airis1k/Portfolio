@@ -2,50 +2,72 @@ import { Link } from "react-router-dom";
 import FacebookIcon from "../assets/facebook.svg";
 import LinkedinIcon from "../assets/linkedin.svg";
 import InstagramIcon from "../assets/instagram.svg";
-import CodingLogo from "../assets/coding-logo.png";
 
 export default function SideNavigation() {
    return (
       <div className="side-navigation">
-         <div className="logo-container">
-            <Link>
-               <img src={CodingLogo} alt="coding-logo" />
-            </Link>
+         <div className="inner-container-wrap">
+            <div className="logo-container">
+               <Link to="#">
+                  <p className="logo-text">&lt;/&gt;</p>
+               </Link>
+            </div>
+            <nav className="links">
+               <ul>
+                  <li>
+                     <Link>Home</Link>
+                  </li>
+                  <li>
+                     <Link>About</Link>
+                  </li>
+                  <li>
+                     <Link>Services</Link>
+                  </li>
+                  <li>
+                     <Link>Portfolio</Link>
+                  </li>
+                  <li>
+                     <Link>Contact</Link>
+                  </li>
+               </ul>
+            </nav>
          </div>
-         <nav>
-            <ul>
-               <li>
-                  <Link>Home</Link>
-               </li>
-               <li>
-                  <Link>About</Link>
-               </li>
-               <li>
-                  <Link>Services</Link>
-               </li>
-               <li>
-                  <Link>Portfolio</Link>
-               </li>
-               <li>
-                  <Link>Contact</Link>
-               </li>
-            </ul>
-         </nav>
          <div className="socials">
             <ul>
                <li>
-                  <Link>
-                     <img src={FacebookIcon} alt="facebook-icon" />
+                  <Link
+                     to="https://www.facebook.com/airingas.staraitis/"
+                     target="_blank"
+                  >
+                     <img
+                        src={FacebookIcon}
+                        alt="facebook-icon"
+                        className="social-logo"
+                     />
                   </Link>
                </li>
                <li>
-                  <Link>
-                     <img src={LinkedinIcon} alt="linkedin-icon" />
+                  <Link
+                     to="https://www.linkedin.com/in/airingas-staraitis/"
+                     target="_blank"
+                  >
+                     <img
+                        src={LinkedinIcon}
+                        alt="linkedin-icon"
+                        className="social-logo"
+                     />
                   </Link>
                </li>
                <li>
-                  <Link>
-                     <img src={InstagramIcon} alt="instagram-icon" />
+                  <Link
+                     to="https://www.instagram.com/airingas7/"
+                     target="_blank"
+                  >
+                     <img
+                        src={InstagramIcon}
+                        alt="instagram-icon"
+                        className="social-logo"
+                     />
                   </Link>
                </li>
             </ul>

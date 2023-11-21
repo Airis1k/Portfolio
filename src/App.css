@@ -7,6 +7,9 @@
 div.App {
    font-family: "Montserrat", sans-serif;
    letter-spacing: 0.5px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-end;
 }
 
 h1 {
@@ -17,11 +20,104 @@ h1 {
    margin: 0;
 }
 
+.orange-btn {
+   color: #fff;
+   background-color: #e3872d;
+   font-weight: 600;
+   padding: 12px 35px;
+   border-radius: 3px;
+   display: inline-block;
+   cursor: pointer;
+   border: 0;
+   font-family: "Montserrat";
+   line-height: 1.8;
+   font-size: 14px;
+}
+
+.orange-btn:hover {
+   background-color: #041230;
+   transition-duration: 0.6s;
+}
+
 /* SIDE NAVIGATION */
 .side-navigation {
    background-color: #041230;
    width: 300px;
    height: 100vh;
+   position: fixed;
+   z-index: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   top: 0;
+   left: 0;
+}
+
+.side-navigation .logo-container {
+   display: flex;
+   justify-content: center;
+   padding: 25px 0px;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+   margin-bottom: 50px;
+}
+
+.side-navigation nav.links {
+   padding: 0 20px 0 60px;
+}
+
+.side-navigation a {
+   text-decoration: none;
+}
+
+.side-navigation p.logo-text {
+   color: #fff;
+   font-size: 140px;
+   font-family: "Racing Sans One";
+   font-weight: bold;
+   margin: 0;
+}
+
+nav.links ul {
+   padding: 0;
+   margin: 0;
+   list-style-type: none;
+}
+
+.side-navigation .links a:hover {
+   color: #e3872d;
+}
+
+nav.links ul li a {
+   color: #fff;
+   text-transform: uppercase;
+   display: inline-block;
+   padding: 15px 0px;
+   transition: all 0.3s ease;
+   font-weight: 500;
+}
+
+.side-navigation .socials {
+   padding: 0 20px 0 60px;
+}
+
+.side-navigation .socials ul {
+   list-style-type: none;
+   padding: 0;
+   margin: 50px 0px;
+   display: flex;
+   column-gap: 20px;
+}
+
+.side-navigation img.social-logo {
+   height: 14px;
+   width: 14px;
+   display: block;
+   transition: all 0.24s ease;
+}
+
+.side-navigation img.social-logo:hover {
+   filter: invert(50%) sepia(45%) saturate(1315%) hue-rotate(339deg)
+      brightness(92%) contrast(92%);
 }
 
 /* HERO SECTION */
@@ -31,6 +127,7 @@ h1 {
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
+   width: calc(100% - 300px);
 }
 
 .content {
@@ -39,7 +136,7 @@ h1 {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   backdrop-filter: brightness(60%) blur(2px);
+   backdrop-filter: brightness(60%) blur(6px);
 }
 
 .hero-section span.second-header-text {
@@ -55,4 +152,122 @@ h1 {
    color: #fff;
    margin: 0;
    font-size: 24px;
+}
+
+/* ABOUT ME SECTION */
+.about-me-section {
+   width: calc(100% - 300px);
+   display: flex;
+   flex-direction: column;
+   max-width: 1450px;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 0px 0 0 300px;
+}
+.about-me-section .intro-text {
+   padding-left: 25px;
+   border-left: 6px solid #e3872d;
+   margin: 100px 0;
+}
+
+.about-me-section .intro-text h2 {
+   margin: 0;
+   font-size: 50px;
+   text-transform: uppercase;
+   font-weight: 600;
+   letter-spacing: -0.5px;
+   line-height: 1;
+}
+
+.about-me-section .intro-text p {
+   margin: 0;
+   font-size: 16px;
+   line-height: 1.8;
+   font-weight: 400;
+}
+
+.about-me-section .container-about-me {
+   display: flex;
+   flex-wrap: wrap;
+   padding-bottom: 122px;
+}
+
+.about-me-section .picture-wrapper {
+   width: 35%;
+   padding-right: 40px;
+   position: relative;
+}
+
+.about-me-section .picture-wrapper img {
+   width: 100%;
+   height: 100%;
+   display: block;
+}
+
+.about-me-section .picture-wrapper .profile-border-custom {
+   width: calc(100% - 40px);
+   height: 100%;
+   border: 10px solid #041230;
+   position: absolute;
+   top: 25px;
+   left: 25px;
+   z-index: -10;
+}
+
+.about-me-section .text-wrapper {
+   width: 65%;
+   padding-left: 65px;
+}
+
+.about-me-section .container-about-me .text-wrapper h3 {
+   font-size: 24px;
+   margin: 0 0 18px;
+   line-height: 1;
+   font-weight: 500;
+}
+
+.about-me-section .container-about-me .text-wrapper .second-header-text {
+   color: #e3872d;
+   font-weight: 600;
+}
+
+.about-me-section .container-about-me .text-wrapper p.paragraph-text {
+   color: #333;
+   font-size: 14px;
+   line-height: 1.8;
+   margin: 0;
+   font-family: "Open Sans";
+   margin-bottom: 15px;
+}
+
+.about-me-section .container-about-me .text-wrapper span.second-paragraph-text {
+   color: #e3872d;
+   font-weight: bold;
+}
+
+.about-me-section ul.information-about-me {
+   display: grid;
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr;
+   list-style-type: none;
+   padding: 0;
+   margin: 0 0 15px;
+   row-gap: 10px;
+   font-family: "Open Sans";
+   font-size: 14px;
+   line-height: 1.8;
+}
+
+.about-me-section ul.information-about-me span.bold-text {
+   font-family: "Montserrat";
+   font-weight: 700;
+   font-size: 13px;
+   color: #000;
+   display: inline-block;
+   min-width: 85px;
+}
+
+.about-me-section .text-wrapper .buttons-wrap {
+   display: flex;
+   column-gap: 30px;
 }

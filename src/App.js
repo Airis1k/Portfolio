@@ -12,7 +12,7 @@ function App() {
       <div className="App">
          <SideNavigation />
          <HeroSection />
-         {/* <AboutMeSection /> */}
+         <AboutMeSection />
          {/* <ServicesSection /> */}
          {/* <MyWorksSection /> */}
          {/* <ContactMeSection /> */}
