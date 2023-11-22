@@ -22,7 +22,7 @@ export default function SideNavigation() {
                      <HashLink to="#about">About</HashLink>
                   </li>
                   <li>
-                     <Link>Services</Link>
+                     <HashLink to="#services">Services</HashLink>
                   </li>
                   <li>
                      <Link>Portfolio</Link>
