@@ -5,6 +5,7 @@ import AboutMeSection from "./components/AboutMeSection";
 import AbilitiesSection from "./components/AbilitiesSection";
 import ServicesSection from "./components/ServicesSection";
 import MyWorksSection from "./components/MyWorksSection";
+import CodingInfo from "./components/CodingInfo";
 import ContactMeSection from "./components/ContactMeSection";
 import Footer from "./components/Footer";
 
@@ -16,7 +17,8 @@ function App() {
          <AboutMeSection />
          <AbilitiesSection />
          <ServicesSection />
-         {/* <MyWorksSection /> */}
+         <MyWorksSection />
+         <CodingInfo />
          {/* <ContactMeSection /> */}
          {/* <Footer /> */}
       </div>
