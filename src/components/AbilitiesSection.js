@@ -7,13 +7,15 @@ export default function AbilitiesSection() {
             <div className="text">
                <h4>My Abilities</h4>
                <p>
-                  I am Web developer able to build a Web presence from the
-                  ground up - from concept, navigation, layout and programming
-                  to UX and SEO. Skilled at writing well-designed, testable and
-                  efficient code using current best practices in Web
-                  development. Fast learner, hard worker and team player who is
-                  proficient in an array of scripting languages and multimedia
-                  Web tools.
+                  I specialize in web development, creating websites using HTML,
+                  CSS, and JavaScript. I'm skilled in frameworks like ReactJS
+                  and use Git for managing code. Design-wise, I'm familiar with
+                  Bootstrap, ensuring websites look great on different devices.
+                  On the data side, I'm experienced with databases, especially
+                  SQL, and I know how to handle CRUD operations smoothly.
+                  Beyond coding, I've spent five years mastering Microsoft
+                  Excel, using it for tasks like data analysis and creating
+                  useful dashboards. I'm in love with learning new things.
                </p>
             </div>
             <ShowcaseList />

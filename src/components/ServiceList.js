@@ -9,7 +9,7 @@ export default function ServiceList() {
          <ServiceItem
             logo={WebDevIcon}
             header="Web Development"
-            description="I possess in-depth knowledge and expertise in HTML, CSS, and JavaScript, which are crucial elements for building and developing modern websites. HTML is the foundation of any website, serving as the basic structure and content of a web page. CSS, on the other hand, is used to design and style the HTML structure, making it more visually appealing and enhancing its overall user experience."
+            description="Web Development is the art and science of creating interactive and dynamic websites that enhance user experiences on the internet. It involves a combination of programming languages, design principles, and server management to build web applications and sites. As a web developer, I leverage my skills in HTML, CSS, and JavaScript to craft visually appealing and functional websites."
          />
          <ServiceItem
             logo={DatabaseIcon}

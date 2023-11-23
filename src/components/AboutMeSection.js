@@ -27,7 +27,7 @@ export default function AboutMeSection() {
                <div className="text-wrapper">
                   <h3>I'm Airingas - <span className="second-header-text">{profession}</span></h3>
                   <p className="paragraph-text">
-                     Hi! My name is <span className="second-paragraph-text">Airingas Staraitis</span>. I am a Web Developer, and I'm very passionate and dedicated to my work. With 10 years experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration to concept and execution, but I find the most satisfaction in seeing the finished product do everything for you that it was created to do.
+                     Hi! My name is <span className="second-paragraph-text">Airingas Staraitis</span>. I am a Web Developer and Excel freelancer who loves turning ideas into digital reality. I build websites and mobile apps, making sure they're user-friendly and look good on any device. If you've got messy data or need Excel magic, I've got you covered too. Outside of tech, I'm into fitness and finance.
                   </p>
                   <ul className="information-about-me">
                      <li><span className="bold-text">Age:</span> 22</li>
