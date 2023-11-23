@@ -1,6 +1,6 @@
 export default function MyWorksSection() {
    return (
-      <section className="my-works-section">
+      <section id="portfolio" className="my-works-section">
          <div className="container">
             <div className="intro-text">
                <h2>Creative Works</h2>

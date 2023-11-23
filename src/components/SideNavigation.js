@@ -25,10 +25,10 @@ export default function SideNavigation() {
                      <HashLink to="#services">Services</HashLink>
                   </li>
                   <li>
-                     <Link>Portfolio</Link>
+                     <HashLink to="#portfolio">Portfolio</HashLink>
                   </li>
                   <li>
-                     <Link>Contact</Link>
+                     <HashLink to="#contact">Contact</HashLink>
                   </li>
                </ul>
             </nav>

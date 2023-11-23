@@ -174,7 +174,8 @@ nav.links ul li a {
 
 .about-me-section .intro-text,
 .services-section .intro-text,
-.my-works-section .intro-text {
+.my-works-section .intro-text,
+.contact-me-section .intro-text {
    padding-left: 25px;
    border-left: 6px solid #e3872d;
    margin: 100px 0;
@@ -182,7 +183,8 @@ nav.links ul li a {
 
 .about-me-section .intro-text h2,
 .services-section .intro-text h2,
-.my-works-section .intro-text h2 {
+.my-works-section .intro-text h2,
+.contact-me-section .intro-text h2 {
    margin: 0;
    font-size: 50px;
    text-transform: uppercase;
@@ -193,7 +195,8 @@ nav.links ul li a {
 
 .about-me-section .intro-text p,
 .services-section .intro-text p,
-.my-works-section .intro-text p {
+.my-works-section .intro-text p,
+.contact-me-section .intro-text p {
    margin: 0;
    font-size: 16px;
    line-height: 1.8;
@@ -356,7 +359,7 @@ nav.links ul li a {
    max-width: 1450px;
    margin-left: auto;
    margin-right: auto;
-   padding: 100px 150px 0;
+   padding: 0 150px 50px;
    display: flex;
    flex-direction: column;
 }
@@ -412,6 +415,10 @@ nav.links ul li a {
    margin-left: auto;
    margin-right: auto;
    padding: 0 150px 70px;
+}
+
+.my-works-section .intro-text {
+   margin: 50px 0 100px;
 }
 
 .my-works-section .content-box {
@@ -491,4 +498,108 @@ nav.links ul li a {
    font-size: 14px;
    font-weight: 600;
    margin: 0;
+}
+
+/* CONTACT ME SECTION */
+.contact-me-section {
+   width: calc(100% - 300px);
+}
+
+.contact-me-section .container {
+   max-width: 1450px;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 0 150px;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.contact-me-section .intro-text {
+   margin: 40px 0 90px;
+   width: 100%;
+}
+
+.contact-me-section .my-info {
+   width: 40%;
+}
+
+.contact-me-section #contact-me-form {
+   width: 60%;
+   display: flex;
+   flex-direction: column;
+   row-gap: 20px;
+}
+
+.contact-me-section .my-info h3 {
+   margin: 0 0 30px;
+   font-size: 24px;
+   line-height: 1;
+   font-weight: 500;
+}
+
+.contact-me-section .my-info .info-list {
+   padding: 0;
+   margin: 0;
+   list-style-type: none;
+   display: flex;
+   flex-direction: column;
+   row-gap: 15px;
+}
+
+.contact-me-section .my-info .info-list li {
+   font-size: 14px;
+   font-family: "Open Sans";
+   line-height: 1.8;
+}
+
+.contact-me-section .my-info .info-list li .bold-text {
+   font-family: "Montserrat";
+   font-weight: 700;
+   font-size: 13px;
+   color: #000;
+}
+
+.contact-me-section #contact-me-form .wrap {
+   /* border-bottom: 1px solid black; */
+}
+
+.contact-me-section #contact-me-form .wrap input {
+   padding: 10px 10px 10px 0;
+   font-size: 13px;
+   letter-spacing: 1.4px;
+   font-family: "Open Sans";
+   line-height: 1.6;
+   height: 44px;
+   width: 100%;
+   background-color: transparent;
+   border: none;
+   color: #333;
+   border-bottom: 1px solid black;
+   outline: none;
+   text-transform: capitalize;
+}
+
+.contact-me-section #contact-me-form .wrap input::placeholder {
+   color: #000;
+}
+
+.contact-me-section #contact-me-form .wrap textarea {
+   width: 100%;
+   border: 0;
+   border-bottom: 1px solid black;
+   height: 80px;
+   background-color: transparent;
+   color: #333;
+   font-size: 13px;
+   resize: vertical;
+   letter-spacing: 1.2px;
+   line-height: 1.4;
+   font-family: "Open Sans";
+   padding: 10px 10px 10px 0;
+   outline: none;
+   text-transform: capitalize;
+}
+
+.contact-me-section #contact-me-form .wrap textarea::placeholder {
+   color: #000;
 }

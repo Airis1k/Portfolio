@@ -20,7 +20,7 @@ function App() {
          <MyWorksSection />
          <CodingInfo />
          <ContactMeSection />
-         {/* <Footer /> */}
+         <Footer />
       </div>
    );
 }
