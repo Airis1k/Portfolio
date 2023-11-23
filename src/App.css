@@ -433,7 +433,7 @@ nav.links ul li a {
 
 .my-works-section h4.no-content {
    margin: 0;
-   font-size: 36px;
+   font-size: 24px;
    text-transform: uppercase;
    font-weight: 700;
    letter-spacing: -1px;
@@ -489,7 +489,7 @@ nav.links ul li a {
 .coding-info-section .details h4 {
    font-size: 40px;
    font-weight: 700;
-   margin: 0;
+   margin: 0 0 10px;
 }
 
 .coding-info-section .details p {
@@ -509,7 +509,7 @@ nav.links ul li a {
    max-width: 1450px;
    margin-left: auto;
    margin-right: auto;
-   padding: 0 150px;
+   padding: 0 150px 100px;
    display: flex;
    flex-wrap: wrap;
 }
@@ -602,4 +602,26 @@ nav.links ul li a {
 
 .contact-me-section #contact-me-form .wrap textarea::placeholder {
    color: #000;
+}
+
+/* FOOTER */
+footer {
+   width: calc(100% - 300px);
+   background-color: #041230;
+   padding: 50px 0;
+}
+
+footer .container {
+   max-width: 1450px;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 0 150px;
+}
+
+footer p {
+   color: #FFF;
+   font-family: "Open Sans";
+   font-size: 14px;
+   line-height: 1.8;
+   margin: 0;
 }

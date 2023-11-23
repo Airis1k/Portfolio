@@ -24,7 +24,7 @@ export default function CodingInfo() {
                <li>
                   <div className="details">
                      <h4>1</h4>
-                     <p>Dev Awards</p>
+                     <p>Dev Award</p>
                   </div>
                </li>
             </ul>
