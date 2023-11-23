@@ -411,7 +411,7 @@ nav.links ul li a {
    max-width: 1450px;
    margin-left: auto;
    margin-right: auto;
-   padding: 0 150px;
+   padding: 0 150px 70px;
 }
 
 .my-works-section .content-box {
@@ -421,6 +421,7 @@ nav.links ul li a {
    display: flex;
    justify-content: center;
    align-items: center;
+   margin-bottom: 30px;
 }
 
 .my-works-section h4.no-content {
@@ -437,4 +438,57 @@ nav.links ul li a {
 /* CODING INFO SECTION */
 .coding-info-section {
    width: calc(100% - 300px);
+   background-color: #f6f7fd;
+}
+
+.coding-info-section .container {
+   max-width: 1450px;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 0 150px;
+}
+
+.coding-info-section ul {
+   display: flex;
+   flex-wrap: wrap;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   justify-content: center;
+}
+
+.coding-info-section ul li {
+   width: 25%;
+}
+
+.coding-info-section .details {
+   padding: 90px 15px 93px 15px;
+   text-align: center;
+   position: relative;
+}
+
+.coding-info-section ul li:nth-child(1) .details::after,
+.coding-info-section ul li:nth-child(2) .details::after,
+.coding-info-section ul li:nth-child(3) .details::after {
+   content: "";
+   position: absolute;
+   width: 1px;
+   background-color: #d1d7db;
+   top: 35px;
+   bottom: 35px;
+   right: 0;
+}
+
+.coding-info-section .details h4 {
+   font-size: 40px;
+   font-weight: 700;
+   margin: 0;
+}
+
+.coding-info-section .details p {
+   color: #666;
+   font-family: "Open Sans";
+   font-size: 14px;
+   font-weight: 600;
+   margin: 0;
 }

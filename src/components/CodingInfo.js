@@ -6,25 +6,25 @@ export default function CodingInfo() {
                <li>
                   <div className="details">
                      <h4>200+</h4>
-                     <span>Projects Completed</span>
+                     <p>Projects Completed</p>
                   </div>
                </li>
                <li>
                   <div className="details">
                      <h4>50K+</h4>
-                     <span>Lines of Code</span>
+                     <p>Lines of Code</p>
                   </div>
                </li>
                <li>
                   <div className="details">
                      <h4>100+</h4>
-                     <span>Happy Clients</span>
+                     <p>Happy Clients</p>
                   </div>
                </li>
                <li>
                   <div className="details">
                      <h4>1</h4>
-                     <span>Dev Awards</span>
+                     <p>Dev Awards</p>
                   </div>
                </li>
             </ul>

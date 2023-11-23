@@ -19,7 +19,7 @@ function App() {
          <ServicesSection />
          <MyWorksSection />
          <CodingInfo />
-         {/* <ContactMeSection /> */}
+         <ContactMeSection />
          {/* <Footer /> */}
       </div>
    );
