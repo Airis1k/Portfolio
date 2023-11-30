@@ -8,7 +8,7 @@ export default function Form() {
    const form = useRef();
 
    function notifySuccess() {
-      toast.success("Message has been sent successfully!", {
+      toast.success("Message has been sent successfully", {
          position: "top-right",
          autoClose: 3000,
          hideProgressBar: false,
@@ -21,7 +21,7 @@ export default function Form() {
    }
 
    function notifyError() {
-      toast.error("There was an error with the message.", {
+      toast.error("There was an error with the message", {
          position: "top-right",
          autoClose: 3000,
          hideProgressBar: false,

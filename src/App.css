@@ -36,6 +36,7 @@ h1 {
    font-family: "Montserrat";
    line-height: 1.8;
    font-size: 14px;
+   text-decoration: none;
 }
 
 .orange-btn:hover {
@@ -55,6 +56,29 @@ h1 {
    justify-content: space-between;
    top: 0;
    left: 0;
+   transition: all .3s ease;
+}
+
+.side-navigation .sidebar-btn {
+   width: 30px;
+   height: 30px;
+   background-color: #e3872d;
+   border: 0;
+   position: absolute;
+   right: 0;
+   bottom: 20%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   border-radius: 2px;
+   transition: all .3s ease;
+}
+
+.side-navigation .sidebar-btn img {
+   display: block;
+   width: 11px;
+   height: 11px;
 }
 
 .side-navigation .logo-container {
@@ -132,6 +156,7 @@ nav.links ul li a {
    background-size: cover;
    background-position: center;
    width: calc(100% - 300px);
+   transition: all .3s ease;
 }
 
 .content {
@@ -161,6 +186,7 @@ nav.links ul li a {
 /* ABOUT ME SECTION */
 .about-me-section {
    width: calc(100% - 300px);
+   transition: all .3s ease;
 }
 
 .about-me-section .container {
@@ -294,6 +320,7 @@ nav.links ul li a {
    width: calc(100% - 300px);
    background-color: #f6f7fd;
    padding: 90px 0px;
+   transition: all .3s ease;
 }
 
 .abilities-section .abilities-wrap {
@@ -353,6 +380,7 @@ nav.links ul li a {
 /* SERVICES SECTION */
 .services-section {
    width: calc(100% - 300px);
+   transition: all .3s ease;
 }
 
 .services-section .container {
@@ -408,6 +436,7 @@ nav.links ul li a {
 /* MY WORKS SECTION */
 .my-works-section {
    width: calc(100% - 300px);
+   transition: all .3s ease;
 }
 
 .my-works-section .container {
@@ -446,6 +475,7 @@ nav.links ul li a {
 .coding-info-section {
    width: calc(100% - 300px);
    background-color: #f6f7fd;
+   transition: all .3s ease;
 }
 
 .coding-info-section .container {
@@ -503,6 +533,7 @@ nav.links ul li a {
 /* CONTACT ME SECTION */
 .contact-me-section {
    width: calc(100% - 300px);
+   transition: all .3s ease;
 }
 
 .contact-me-section .container {
@@ -568,7 +599,7 @@ nav.links ul li a {
 }
 
 .contact-me-section #contact-me-form .error-message-wrapper .error-message {
-   color: #BD0A0D;
+   color: #bd0a0d;
    font-family: "Open Sans";
    font-size: 14px;
    line-height: 1.8;
@@ -618,6 +649,7 @@ footer {
    width: calc(100% - 300px);
    background-color: #041230;
    padding: 50px 0;
+   transition: all .3s ease;
 }
 
 footer .container {
@@ -628,7 +660,7 @@ footer .container {
 }
 
 footer p {
-   color: #FFF;
+   color: #fff;
    font-family: "Open Sans";
    font-size: 14px;
    line-height: 1.8;

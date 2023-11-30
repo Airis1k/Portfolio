@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ProfilePic from "../assets/cut.jpg";
+import { HashLink } from "react-router-hash-link";
 
 export default function AboutMeSection() {
    const [profession, setProfession] = useState("Web Developer");
@@ -39,7 +40,7 @@ export default function AboutMeSection() {
                   </ul>
                   <div className="buttons-wrap">
                      <button className="orange-btn">Download CV</button>
-                     <button className="orange-btn">Send Message</button>
+                     <HashLink to="#contact" className="orange-btn">Send Message</HashLink>
                   </div>
                </div>
             </div>
