@@ -563,6 +563,17 @@ nav.links ul li a {
    /* border-bottom: 1px solid black; */
 }
 
+.contact-me-section #contact-me-form .error-message-wrapper {
+   display: none;
+}
+
+.contact-me-section #contact-me-form .error-message-wrapper .error-message {
+   color: #BD0A0D;
+   font-family: "Open Sans";
+   font-size: 14px;
+   line-height: 1.8;
+}
+
 .contact-me-section #contact-me-form .wrap input {
    padding: 10px 10px 10px 0;
    font-size: 13px;
