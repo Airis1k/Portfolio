@@ -6,7 +6,7 @@ export default function HeroSection() {
    useEffect(() => {
       const interval = setInterval(() => {
          profession === "Web Developer" ? setProfession("Freelancer") : setProfession("Web Developer");
-      }, 3000);
+      }, 2000);
 
       return () => clearInterval(interval);
    }, [profession]);

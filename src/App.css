@@ -576,7 +576,6 @@ nav.links ul li a {
    color: #333;
    border-bottom: 1px solid black;
    outline: none;
-   text-transform: capitalize;
 }
 
 .contact-me-section #contact-me-form .wrap input::placeholder {
@@ -597,7 +596,6 @@ nav.links ul li a {
    font-family: "Open Sans";
    padding: 10px 10px 10px 0;
    outline: none;
-   text-transform: capitalize;
 }
 
 .contact-me-section #contact-me-form .wrap textarea::placeholder {

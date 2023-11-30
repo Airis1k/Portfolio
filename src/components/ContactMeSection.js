@@ -1,3 +1,5 @@
+import Form from "./Form";
+
 export default function ContactMeSection() {
    return (
       <section id="contact" className="contact-me-section">
@@ -23,20 +25,7 @@ export default function ContactMeSection() {
                   </li>
                </ul>
             </div>
-            <form id="contact-me-form">
-               <div className="wrap">
-                  <input id="name" type="text" placeholder="Your name" />
-               </div>
-               <div className="wrap">
-                  <input id="email" type="email" placeholder="Your email" />
-               </div>
-               <div className="wrap">
-                  <textarea id="message" placeholder="Your message"></textarea>
-               </div>
-               <div className="submit-wrap">
-                  <input type="submit" value="Send Message" className="orange-btn" />
-               </div>
-            </form>
+            <Form />
          </div>
       </section>
    );
