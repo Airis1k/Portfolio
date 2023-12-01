@@ -9,10 +9,12 @@ import CodingInfo from "./components/CodingInfo";
 import ContactMeSection from "./components/ContactMeSection";
 import Footer from "./components/Footer";
 import BackToTopBtn from "./components/BackToTopBtn";
+import Header from "./components/Header";
 
 function App() {
    return (
       <div className="App">
+         <Header />
          <SideNavigation />
          <HeroSection />
          <AboutMeSection />

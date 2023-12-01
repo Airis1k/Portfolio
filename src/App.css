@@ -739,6 +739,90 @@ footer p {
    width: 11px;
 }
 
+/* HEADER */
+header {
+   display: none;
+   width: 100%;
+   position: fixed;
+   z-index: 1;
+   flex-direction: column;
+}
+
+header .container {
+   /* width: 100%; */
+   background-color: #041230;
+   padding: 10px 20px 10px 35px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header a img {
+   width: 40px;
+   height: 40px;
+   display: block;
+}
+
+header .menu {
+   margin-top: -253px;
+   background-color: rgba(4, 18, 48, 0.97);
+   padding: 30px 20px;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+   transition: all 0.6s ease;
+   z-index: -1;
+}
+
+header .menu ul {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   row-gap: 5px;
+}
+
+header .menu ul li a {
+   text-decoration: none;
+   color: #fff;
+   font-weight: 600;
+   font-size: 19px;
+   line-height: 1.8;
+}
+
+/* BURGER MENU */
+.ham {
+   cursor: pointer;
+   -webkit-tap-highlight-color: transparent;
+   transition: transform 400ms;
+   -moz-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+.hamRotate.active {
+   transform: rotate(45deg);
+}
+.line {
+   fill: none;
+   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+   stroke: #000;
+   stroke-width: 5.5;
+   stroke-linecap: round;
+}
+.ham4 .top {
+   stroke-dasharray: 40 121;
+}
+.ham4 .bottom {
+   stroke-dasharray: 40 121;
+}
+.ham4.active .top {
+   stroke-dashoffset: -68px;
+}
+.ham4.active .bottom {
+   stroke-dashoffset: -68px;
+}
+
 @media (max-width: 1759px) {
    .about-me-section .container {
       padding: 0 100px;
@@ -862,34 +946,38 @@ footer p {
    }
 
    .hero-section {
-      width: 100%;
+      width: 100% !important;
    }
 
    .about-me-section {
-      width: 100%;
+      width: 100% !important;
    }
 
    .abilities-section {
-      width: 100%;
+      width: 100% !important;
    }
 
    .services-section {
-      width: 100%;
+      width: 100% !important;
    }
 
    .my-works-section {
-      width: 100%;
+      width: 100% !important;
    }
 
    .coding-info-section {
-      width: 100%;
+      width: 100% !important;
    }
 
    .contact-me-section {
-      width: 100%;
+      width: 100% !important;
    }
 
    footer {
-      width: 100%;
+      width: 100% !important;
+   }
+
+   header {
+      display: flex;
    }
 }
