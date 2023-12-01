@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import ArrowsDown from "../assets/ArrowsDown.svg";
+import { HashLink } from "react-router-hash-link";
 
 export default function HeroSection() {
    const [profession, setProfession] = useState("Web Developer");
@@ -16,6 +18,9 @@ export default function HeroSection() {
          <div className="content">
             <h1>Airingas <span className="second-header-text">Staraitis</span></h1>
             <p>I'm a <span className="second-paragraph-text">{profession}</span></p>
+            <HashLink to="#about">
+               <img src={ArrowsDown} alt="arrows down" className="arrows-down-logo" />
+            </HashLink>
          </div>
       </section>
    );

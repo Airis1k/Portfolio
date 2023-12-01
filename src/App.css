@@ -14,6 +14,7 @@ div.App {
    display: flex;
    flex-wrap: wrap;
    justify-content: flex-end;
+   position: relative;
 }
 
 h1 {
@@ -56,7 +57,7 @@ h1 {
    justify-content: space-between;
    top: 0;
    left: 0;
-   transition: all .3s ease;
+   transition: all 0.3s ease;
 }
 
 .side-navigation .sidebar-btn {
@@ -72,7 +73,7 @@ h1 {
    align-items: center;
    cursor: pointer;
    border-radius: 2px;
-   transition: all .3s ease;
+   transition: all 0.3s ease;
 }
 
 .side-navigation .sidebar-btn img {
@@ -84,7 +85,7 @@ h1 {
 .side-navigation .logo-container {
    display: flex;
    justify-content: center;
-   padding: 25px 0px;
+   padding: 45px 0px;
    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
    margin-bottom: 50px;
 }
@@ -97,12 +98,9 @@ h1 {
    text-decoration: none;
 }
 
-.side-navigation p.logo-text {
-   color: #fff;
-   font-size: 140px;
-   font-family: "Racing Sans One";
-   font-weight: bold;
-   margin: 0;
+.side-navigation a img {
+   display: block;
+   width: 160px;
 }
 
 nav.links ul {
@@ -122,6 +120,22 @@ nav.links ul li a {
    padding: 15px 0px;
    transition: all 0.3s ease;
    font-weight: 500;
+   display: flex;
+   align-items: center;
+   column-gap: 10px;
+}
+
+nav.links ul li a::after {
+   content: "";
+   height: 2px;
+   width: 0px;
+   display: inline-block;
+   background-color: #e3872d;
+   transition: all 0.3s ease;
+}
+
+nav.links ul li a:hover:after {
+   width: 35px;
 }
 
 .side-navigation .socials {
@@ -156,7 +170,8 @@ nav.links ul li a {
    background-size: cover;
    background-position: center;
    width: calc(100% - 300px);
-   transition: all .3s ease;
+   transition: all 0.3s ease;
+   background-attachment: fixed;
 }
 
 .content {
@@ -166,6 +181,7 @@ nav.links ul li a {
    justify-content: center;
    align-items: center;
    backdrop-filter: brightness(60%) blur(6px);
+   position: relative;
 }
 
 .hero-section span.second-header-text {
@@ -183,10 +199,40 @@ nav.links ul li a {
    font-size: 24px;
 }
 
+.hero-section a {
+   position: absolute;
+   animation: bounce 2s infinite;
+   bottom: 80px;
+   cursor: pointer;
+   padding: 10px;
+}
+
+.hero-section img.arrows-down-logo {
+   width: 20px;
+   height: 20px;
+   display: block;
+}
+
+@keyframes bounce {
+   0%,
+   20%,
+   50%,
+   80%,
+   100% {
+      transform: translateY(0);
+   }
+   40% {
+      transform: translateY(-30px);
+   }
+   60% {
+      transform: translateY(-15px);
+   }
+}
+
 /* ABOUT ME SECTION */
 .about-me-section {
    width: calc(100% - 300px);
-   transition: all .3s ease;
+   transition: all 0.3s ease;
 }
 
 .about-me-section .container {
@@ -320,7 +366,7 @@ nav.links ul li a {
    width: calc(100% - 300px);
    background-color: #f6f7fd;
    padding: 90px 0px;
-   transition: all .3s ease;
+   transition: all 0.3s ease;
 }
 
 .abilities-section .abilities-wrap {
@@ -380,7 +426,7 @@ nav.links ul li a {
 /* SERVICES SECTION */
 .services-section {
    width: calc(100% - 300px);
-   transition: all .3s ease;
+   transition: all 0.3s ease;
 }
 
 .services-section .container {
@@ -436,7 +482,7 @@ nav.links ul li a {
 /* MY WORKS SECTION */
 .my-works-section {
    width: calc(100% - 300px);
-   transition: all .3s ease;
+   transition: all 0.3s ease;
 }
 
 .my-works-section .container {
@@ -475,7 +521,7 @@ nav.links ul li a {
 .coding-info-section {
    width: calc(100% - 300px);
    background-color: #f6f7fd;
-   transition: all .3s ease;
+   transition: all 0.3s ease;
 }
 
 .coding-info-section .container {
@@ -533,7 +579,7 @@ nav.links ul li a {
 /* CONTACT ME SECTION */
 .contact-me-section {
    width: calc(100% - 300px);
-   transition: all .3s ease;
+   transition: all 0.3s ease;
 }
 
 .contact-me-section .container {
@@ -649,7 +695,7 @@ footer {
    width: calc(100% - 300px);
    background-color: #041230;
    padding: 50px 0;
-   transition: all .3s ease;
+   transition: all 0.3s ease;
 }
 
 footer .container {
@@ -665,4 +711,30 @@ footer p {
    font-size: 14px;
    line-height: 1.8;
    margin: 0;
+}
+
+/* BACK TO TOP BUTTON */
+.back-to-top-btn {
+   position: fixed;
+   bottom: 60px;
+   right: 60px;
+   width: 44px;
+   height: 44px;
+   background-color: #e3872d;
+   border-radius: 3px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   outline: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.back-to-top-btn:hover {
+   background-color: #041230;
+   transition-duration: 0.6s;
+}
+
+.back-to-top-btn img {
+   display: block;
+   height: 11px;
+   width: 11px;
 }

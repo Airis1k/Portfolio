@@ -6,6 +6,7 @@ import InstagramIcon from "../assets/instagram.svg";
 import ArrowLeft from "../assets/arrowLeft.svg";
 import ArrowRight from "../assets/arrowRight.svg";
 import { useState } from "react";
+import KeyboardLogo from "../assets/KeyboardLogo.svg";
 
 export default function SideNavigation() {
    const [isHidden, setIsHidden] = useState(true);
@@ -41,10 +42,6 @@ export default function SideNavigation() {
          setSideBarImg(ArrowLeft);
          setIsHidden(true);
       }
-      // setSideBarImg(prevValue => {
-      //    const result = prevValue == ArrowLeft ? ArrowRight : ArrowLeft;
-      //    return result;
-      // });
    }
 
    return (
@@ -52,7 +49,7 @@ export default function SideNavigation() {
          <div className="inner-container-wrap">
             <div className="logo-container">
                <Link to="#">
-                  <p className="logo-text">&lt;/&gt;</p>
+                  <img src={KeyboardLogo} alt="keyboard logo" />
                </Link>
             </div>
             <nav className="links">
@@ -76,7 +73,7 @@ export default function SideNavigation() {
             </nav>
          </div>
          <button className="sidebar-btn" onClick={handleBtnClick}>
-            <img src={sideBarImg} />
+            <img src={sideBarImg} alt="left-arrow" />
          </button>
          <div className="socials">
             <ul>

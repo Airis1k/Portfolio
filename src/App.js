@@ -8,6 +8,7 @@ import MyWorksSection from "./components/MyWorksSection";
 import CodingInfo from "./components/CodingInfo";
 import ContactMeSection from "./components/ContactMeSection";
 import Footer from "./components/Footer";
+import BackToTopBtn from "./components/BackToTopBtn";
 
 function App() {
    return (
@@ -21,6 +22,7 @@ function App() {
          <CodingInfo />
          <ContactMeSection />
          <Footer />
+         <BackToTopBtn />
       </div>
    );
 }
