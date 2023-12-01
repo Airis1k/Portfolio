@@ -738,3 +738,158 @@ footer p {
    height: 11px;
    width: 11px;
 }
+
+@media (max-width: 1759px) {
+   .about-me-section .container {
+      padding: 0 100px;
+   }
+
+   .abilities-section .abilities-wrap {
+      padding: 0 100px;
+   }
+
+   .services-section .container {
+      padding: 0 100px 50px;
+   }
+
+   .my-works-section .container {
+      padding: 0 100px 70px;
+   }
+
+   .coding-info-section .container {
+      padding: 0 100px;
+   }
+
+   .contact-me-section .container {
+      padding: 0 200px 100px 100px;
+   }
+}
+
+@media (max-width: 1549px) {
+   .about-me-section .container {
+      padding: 0 50px;
+   }
+
+   .abilities-section .abilities-wrap {
+      padding: 0 50px;
+   }
+
+   .services-section .container {
+      padding: 0 50px 50px;
+   }
+
+   .my-works-section .container {
+      padding: 0 50px 70px;
+   }
+
+   .coding-info-section .container {
+      padding: 0 50px;
+   }
+
+   .contact-me-section .container {
+      padding: 0 200px 100px 50px;
+   }
+}
+
+@media (max-width: 1449px) {
+   .about-me-section .container-about-me .picture-wrapper {
+      width: 30%;
+      height: 100%;
+   }
+
+   .about-me-section .container-about-me .text-wrapper {
+      width: 70%;
+   }
+
+   .services-section .service-list .service-item {
+      padding: 30px;
+   }
+}
+
+@media (max-width: 1349px) {
+   .about-me-section .container-about-me .picture-wrapper {
+      width: 40%;
+   }
+
+   .about-me-section .container-about-me .text-wrapper {
+      width: 60%;
+   }
+
+   .about-me-section ul.information-about-me {
+      grid-template-columns: 1fr;
+   }
+
+   .contact-me-section .container {
+      padding: 0 100px 100px 50px;
+   }
+
+   .contact-me-section .my-info {
+      width: 45%;
+   }
+
+   .contact-me-section #contact-me-form {
+      width: 55%;
+   }
+
+   footer .container {
+      padding: 0 50px;
+   }
+}
+
+@media (max-width: 1249px) {
+   .about-me-section .container-about-me .text-wrapper {
+      padding-left: 30px;
+      width: 55%;
+   }
+
+   .about-me-section .container-about-me .picture-wrapper {
+      width: 45%;
+   }
+
+   .services-section .service-list {
+      gap: 30px;
+   }
+
+   .services-section .service-list .service-item {
+      width: calc(50% - 15px);
+      padding: 40px 40px 33px 40px;
+   }
+}
+
+@media (max-width: 1149px) {
+   .side-navigation {
+      display: none;
+   }
+
+   .hero-section {
+      width: 100%;
+   }
+
+   .about-me-section {
+      width: 100%;
+   }
+
+   .abilities-section {
+      width: 100%;
+   }
+
+   .services-section {
+      width: 100%;
+   }
+
+   .my-works-section {
+      width: 100%;
+   }
+
+   .coding-info-section {
+      width: 100%;
+   }
+
+   .contact-me-section {
+      width: 100%;
+   }
+
+   footer {
+      width: 100%;
+   }
+}
