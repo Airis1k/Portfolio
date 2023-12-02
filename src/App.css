@@ -863,7 +863,7 @@ header .menu ul li a {
    }
 
    .my-works-section .container {
-      padding: 0 50px 70px;
+      padding: 50px 50px 70px;
    }
 
    .coding-info-section .container {
@@ -938,6 +938,12 @@ header .menu ul li a {
       width: calc(50% - 15px);
       padding: 40px 40px 33px 40px;
    }
+
+   .about-me-section .text-wrapper .buttons-wrap {
+      flex-wrap: wrap;
+      width: 60%;
+      row-gap: 10px;
+   }
 }
 
 @media (max-width: 1149px) {
@@ -951,6 +957,12 @@ header .menu ul li a {
 
    .about-me-section {
       width: 100% !important;
+   }
+
+   .about-me-section .text-wrapper .buttons-wrap {
+      width: 100%;
+      flex-wrap: nowrap;
+      row-gap: 0px;
    }
 
    .abilities-section {
@@ -979,5 +991,113 @@ header .menu ul li a {
 
    header {
       display: flex;
+   }
+}
+
+@media (max-width: 969px) {
+   .about-me-section ul.information-about-me {
+      grid-template-columns: 1fr 1fr;
+   }
+
+   .about-me-section .container-about-me .picture-wrapper {
+      display: none;
+   }
+
+   .about-me-section .container-about-me .text-wrapper {
+      width: 100%;
+   }
+}
+
+@media (max-width: 799px) {
+   .services-section .service-list .service-item {
+      width: 100%;
+   }
+
+   .abilities-section .abilities-wrap {
+      flex-wrap: wrap;
+      row-gap: 50px;
+   }
+
+   .abilities-section .text {
+      width: 100%;
+   }
+
+   .abilities-section .showcase-list {
+      width: 100%;
+      padding-left: 0;
+   }
+
+   .coding-info-section ul li {
+      width: 50%;
+   }
+
+   .coding-info-section ul li .details {
+      padding: 40px 15px 40px 15px;
+   }
+
+   .coding-info-section ul li:nth-child(2) .details::after {
+      content: none;
+   }
+}
+
+@media (max-width: 699px) {
+   .about-me-section ul.information-about-me {
+      grid-template-columns: 1fr;
+   }
+
+   .about-me-section .container {
+      padding: 0 20px;
+   }
+
+   .abilities-section .abilities-wrap {
+      padding: 0 20px;
+   }
+
+   .services-section .container {
+      padding: 0 20px 50px;
+   }
+
+   .my-works-section .container {
+      padding: 50px 20px 70px;
+   }
+
+   .coding-info-section .container {
+      padding: 0 20px;
+   }
+
+   .contact-me-section .container {
+      padding: 0 20px 100px 20px;
+   }
+
+   footer .container {
+      padding: 0 20px;
+   }
+}
+
+@media (max-width: 599px) {
+   h1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .about-me-section .text-wrapper .buttons-wrap a.orange-btn {
+      display: none;
+   }
+
+   .contact-me-section .my-info {
+      width: 100%;
+      margin-bottom: 20px;
+   }
+
+   .contact-me-section #contact-me-form {
+      width: 100%;
+   }
+}
+
+@media (max-width: 449px) {
+   .my-works-section .content-box {
+      height: 250px;
+      width: 300px;
    }
 }
