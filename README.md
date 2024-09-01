@@ -2,7 +2,7 @@
 
 ## Description
 
--  This project was created using create-react-app. This application allows to send message to an email ([tool](https://www.npmjs.com/package/emailjs))
+-  This project was created using create-react-app.
 
 ## Getting started
 
@@ -22,5 +22,3 @@ npm install
 ```
 npm run start
 ```
-
-## Video Demo: [link](https://youtu.be/0oesDCGr8Ic)
